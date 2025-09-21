@@ -37,16 +37,6 @@ tit4 {
   position: relative;
   font-size: 3.5vw;
   font-weight: 800;
-  color: #f00;
-}
-
-tit5 {
-  margin: 0 0 0 0;
-  padding:0;
-  line-height:normal;
-  position: relative;
-  font-size: 2.5vw;
-  font-weight: 800;
   color: #000;
 }
 
@@ -240,7 +230,27 @@ main{
 
 /* Loading背景画面設定　*/
 
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width:100vw;
+  height:100vw;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
 
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
 
 footer{
   margin:0;
